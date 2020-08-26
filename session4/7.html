@@ -1,25 +1,21 @@
 <html>
 <head>
 <style>
-.container {
-  position: relative;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-}
-
-img { 
-  opacity: 0.3;
-    position: absolute;
-  clip: rect(0px,2000px,2000px,0px);
-}
+.part7_1{
+                position: fixed;
+                left: 20%;
+                top:60%;
+            }
+            img{
+                position: absolute;
+                clip: rect(50px,400px,300px,0px);
+            }
 .foot {
-            display: block;
+            display: flex;
+            position: fixed;
+            margin-top: 300px;
+            align-items: center;
+            justify-content: center;
         }
         .Button {
             background-color: #4CAF50;
@@ -37,17 +33,15 @@ img {
 </style>
 </head>
 <body>
-
-
-
-<div class="container">
-  <img src="klematis_big.jpg" alt="Cinque Terre" width="1000" height="300">
-  <div class="center">Some Text</div>
-</div>
+  <div class="part7_1">
+      <p>.</p>
+  </div>
+  <div class="part7_2">
+      <img src="klematis_big.jpg" alt="klematis big image">
+  </div>
 <div class="foot">
   <a class="Button" href="https://harshak777.github.io/ncp/session4/6.html">&larr;</a>
   <a class="Button" href="https://harshak777.github.io/ncp/session4/8.html">&rarr;</a>
 </div>
-
 </body>
 </html>
