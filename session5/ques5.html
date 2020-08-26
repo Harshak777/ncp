@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>'QUES 5'</title>
+</head>
+<body>
+<script>
+    var st = [];
+    var k=0;
+    function addS(s) {
+        st[k] = s;
+        k++;
+    }
+    function sortS() {
+        st.sort();
+        var s='';
+        for(i=0;i<k;i++){
+            s=s+st[i]+',';
+        }
+        document.getElementById('op').innerText=s;
+    }
+</script>
+<input id="strings">
+<input type="button" onclick="addS(document.getElementById('strings').value)" value="ADD">
+<input type="button" onclick="sortS()" value="SORT">
+<div id="op"></div>
+</body>
+</html>

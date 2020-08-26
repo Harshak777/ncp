@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>'QUES 2'</title>
+    <style>
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 50%;
+        }
+        .black1{
+            background-color: black;
+        }
+
+    </style>
+    <script>
+        function changeBag(){
+            document.getElementsByClassName('black1')[0].style.backgroundColor='red';
+        }
+        function bagchange(){
+            document.getElementsByClassName('black1')[0].style.backgroundColor='black';
+        }
+    </script>
+</head>
+<body>
+<div class="black1">
+    <a href="https://www.google.co.in">
+    <img src="killjoy.png" onmouseover="changeBag()" onmouseleave="bagchange()">
+    </a>
+</div>
+</body>
+</html>

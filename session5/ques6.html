@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>'QUES 6'</title>
+</head>
+<body>
+<script>
+    function findSI() {
+        var s = document.getElementById('num').value * document.getElementById('tim').value * document.getElementById('rat').value;
+        s = s/100;
+        document.getElementById('ans').innerText = s;
+    }
+</script>
+<input type="number" placeholder="Principal" id="num">
+<input type="number" placeholder="Time" id="tim">
+<input type="number" placeholder="Rate" id="rat">
+<input type="button" onclick="findSI()" value="SI">
+<div id="ans"></div>
+</body>
+</html>
