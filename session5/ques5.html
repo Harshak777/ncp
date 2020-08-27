@@ -32,7 +32,7 @@
         k++;
     }
     function sortS() {
-        st.sort();
+        st.sort(function(a, b){return a - b});
         var s='';
         for(i=0;i<k;i++){
             s=s+st[i]+',';
@@ -40,7 +40,7 @@
         document.getElementById('op').innerText=s;
     }
 </script>
-<input id="strings">
+<input type="number" id="strings" value=0>
 <input type="button" onclick="addS(document.getElementById('strings').value)" value="ADD">
 <input type="button" onclick="sortS()" value="SORT">
 <div id="op"></div>
